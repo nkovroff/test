@@ -1,0 +1,646 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  line-height: 40px;
+  text-align: center;
+  font-size: 36px;
+}
+.fon {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../img/fon23.jpg) no-repeat top left;
+  background-size: cover;
+}
+.logo {
+  width: 150px;
+  height: 150px;
+  background: url(../img/logo.png) no-repeat left 20% bottom 20%;
+  animation-iteration-count: infinite;
+  background-size: cover;
+  position: absolute;
+  left:10%;
+  bottom:15%;
+}
+body {
+  height: 100vh;
+  background: url(../img/proshchad-pobedy1.jpg) no-repeat center center;
+    width: 100%;
+    background-size: cover;
+position: relative;
+}
+.center{
+  background: none;
+    position: absolute;
+    z-index: 10;
+    display: contents;
+}
+li {
+  margin-top: 30px;
+  position: relative;
+  z-index: 2;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+a{
+	font-family: Arial;
+	font-size: 21px;
+	color: #000000;
+	background: #ffffffcc;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin-left:5px;
+  }
+  a span{
+      position: relative;
+      padding: 10px;
+      transition: .5s;
+  }
+  a span:nth-child(1){
+      color: #fff;
+      background:#262626;
+  }
+  a span:nth-child(2){
+      color: #fff;
+      background:#ff3636;
+  }
+  a span:nth-child(1)::before{
+      content: attr(data-attr);
+      position: absolute;
+      top: 0;
+      left: 0;
+      background:#ff3636;
+      padding: 10px;
+      transition: .5s;
+      transform-origin: top;
+      transform: rotateX(90deg) translateY(-50%);  
+  }
+  a:hover span:nth-child(1)::before{
+      transform: rotateX(0) translateY(0);
+  }
+  a span:nth-child(2)::before{
+      content: attr(data-attr);
+      position: absolute;
+      top: 0;
+      left: 0;
+      background:#262626;
+      padding: 10px;
+      transition: .5s;
+      transform-origin: bottom;
+      transform: rotateX(90deg) translateY(50%);
+  }
+  a:hover span:nth-child(2)::before{
+      transform: rotateX(0) translateY(0);
+  }
+  a span:nth-child(1)::after{
+      content: attr(data-attr);
+      position: absolute;
+      top: 0;
+      left: 0;
+      background:#262626;
+      padding: 10px;
+      transition: .5s;
+      transform-origin: bottom;
+      transform: rotateX(0deg) translateY(0%);
+  }
+
+  a:hover span:nth-child(1)::after{  
+      transform: rotateX(90deg) translateY(50%);
+  }
+  a span:nth-child(2)::after{
+      content: attr(data-attr);
+      position: absolute;
+      top: 0;
+      left: 0;
+      background:#ff3636;
+      padding: 10px;
+      transition: .5s;
+      transform-origin: top;
+      transform: rotateX(0deg) translateY(0%);
+  }
+  a:hover span:nth-child(2)::after{
+      transform: rotateX(90deg) translateY(-50%);
+  }
+  .submenu1, .submenu2, .submenu3,.submenu4,.submenu5 {
+    position: absolute;
+    display:flex;
+    top: 100%;
+    z-index: 5;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+    flex-wrap: nowrap;
+    z-index: 2;
+  }
+  .pjat a{
+    padding:10px
+      }
+  .chet a{
+    padding:10px
+      }
+.trit a{
+padding:10px
+  }
+.vtor a{
+    padding:10px
+      }
+.pervi a{
+    padding:10px
+}
+.pjat:hover a{
+background:#ff3636
+    }
+.chet:hover a{
+  background:#ff3636
+      }
+.trit:hover a{
+  background:#ff3636
+      }
+.vtor:hover a{
+  background:#ff3636
+      }
+.pervi:hover a{
+  background:#ff3636
+      }
+  .submenu2 {
+    left: -400%;
+  }
+  .submenu3 {
+    right: -600%;
+  }
+  .submenu4 {
+    right: -400%;
+  }
+  .submenu5 {
+    right: -200%;
+  }
+  .pervi, .vtor,.trit, .chet, .pjat {
+    margin-top: 15PX;
+    margin-left:2px;  
+  }
+ .pervii:hover .submenu1 {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .vtoroi:hover .submenu2 {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .tretii:hover .submenu3 {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .chetvertii:hover .submenu4 {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .pjatii:hover .submenu5 {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .year0 {
+    background: url(../img/dovoini.jpg) no-repeat center center;
+    width: 60%;
+    height: 100vh;
+    background-size: cover;
+    float:right;
+  }
+  .dovoini:active::after {
+    color: red;
+  }
+#fon p{
+  color: #fff;
+  text-shadow: 
+    -0   -2px 4px #000000,
+     0   -2px 4px #000000,
+    -0    2px 4px #000000,
+     0    2px 4px #000000,
+    -2px -0   4px #000000,
+     2px -0   4px #000000,
+    -2px  0   4px #000000,
+     2px  0   4px #000000,
+    -1px -2px 4px #000000,
+     1px -2px 4px #000000,
+    -1px  2px 4px #000000,
+     1px  2px 4px #000000,
+    -2px -1px 4px #000000,
+     2px -1px 4px #000000,
+    -2px  1px 4px #000000,
+     2px  1px 4px #000000,
+    -2px -2px 4px #000000,
+     2px -2px 4px #000000,
+    -2px  2px 4px #000000,
+     2px  2px 4px #000000,
+    -2px -2px 4px #000000,
+     2px -2px 4px #000000,
+    -2px  2px 4px #000000,
+     2px  2px 4px #000000;
+     position: relative;
+     top: 16%;
+     left:-60%;
+     width: 55%;
+     display: block;
+     transform: translateY(40px);
+     transition: all 1s;
+}
+.year1 {
+  background: url(../img/iyun41.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year2{
+  background: url(../img/iyul41.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year3 {
+background: url(../img/aug1941.jpg) no-repeat center center;
+width: 60%;
+height: 100vh;
+background-size: cover;
+float:right;
+}
+
+.year4 {
+  background: url(../img/sep1941.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year5 {
+  background: url(../img/oct1941.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year6 {
+  background: url(../img/nov1941.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year7 {
+  background: url(../img/dec1941.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+} 
+  
+  .year8 {
+  background: url(../img/jan1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  
+  .year9 {
+  background: url(../img/feb.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  
+  .year10 {
+  background: url(../img/mart1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  
+  .year11 {
+  background: url(../img/apr1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  
+  .year12 {
+  background: url(../img/may1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  
+  .year13 {
+  background: url(../img/ijul1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  
+  .year14 {
+  background: url(../img/yul1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  
+  .year15 {
+  background: url(../img/avg1942.jpeg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  
+  .year16 {
+  background: url(../img/sep1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  
+  .year17 {
+  background: url(../img/oct1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  
+  .year18 {
+  background: url(../img/nov1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  
+  .year19 {
+  background: url(../img/dec1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  
+  .year20 {
+  background: url(../img/jan1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  
+  .year21 {
+  background: url(../img/feb1943.png) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  
+  .year22 {
+  background: url(../img/mart1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  
+  .year23 {
+  background: url(../img/apr1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  
+  .year24 {
+  background: url(../img/maj1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  
+  .year25 {
+  background: url(../img/ijun1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  
+  .year26 {
+  background: url(../img/ijul1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  
+  .year27 {
+  background: url(../img/avg1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  
+  .year28 {
+  background: url(../img/sept1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  
+  .year29 {
+  background: url(../img/oct1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+ 
+  .year30 {
+  background: url(../img/nov1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  
+  .year31 {
+  background: url(../img/dec1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+
+.year32 {
+  background: url(../img/jan1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year33 {
+  background: url(../img/feb1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year34 {
+  background: url(../img/mart1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year35 {
+  background: url(../img/apr1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year36 {
+  background: url(../img/mai1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year37 {
+  background: url(../img/ijun1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year38 {
+  background: url(../img/ijul1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year39 {
+  background: url(../img/avg1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year40 {
+  background: url(../img/sept1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year41 {
+  background: url(../img/oct1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year42 {
+  background: url(../img/nov1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year23 {
+  background: url(../img/dec1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year44 {
+  background: url(../img/jan1945.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year45 {
+  background: url(../img/feb1945.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year46 {
+  background: url(../img/mart1945.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year47 {
+  background: url(../img/apr1945.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+.year48 {
+  background: url(../img/mai1945.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+
+  .year49 {
+  background: url(../img/s1200.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }

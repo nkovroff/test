@@ -1,0 +1,267 @@
+* {
+	margin:0;
+	padding:0;
+	font-family: "Century Gothic",  sans-serif;
+	font-weight: bold;
+}
+.historyimg  img{
+width:100%;
+
+
+}
+.itc-slider__item img {
+	width:100%;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+.animate__animated.animate__pulse {
+  --animate-duration: 2s;
+}
+body {
+	width: 100%;
+    display: flex;
+    background: url(../img/main\ img/fon.png) no-repeat fixed;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+}
+
+main {
+	width: 80%;
+	background: #fff;
+	border-radius: 15px;
+}
+main p {
+	text-align: justify;
+	margin: 10px;
+}
+#wrapper {
+			width: 100%;
+	background: url(../img/shapka.jpg) no-repeat;
+	background-size: cover;
+	background-position-y: 63%;
+}
+.obertka {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container2 {
+  width: 100%;
+  display: flex;
+}
+.slide {
+  height: 80vh;
+  border-radius:20px;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  flex:1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+.slide h3{
+  position: absolute;
+  font-size: 24px;
+  bottom:20px;
+  margin:0;
+  left:20px;
+opacity: 0;
+}
+.slide.active {
+  flex: 10;
+}
+.slide.active h3 {
+opacity: 1;
+transition: opacity 0.3s ease-in 0.4s;
+
+}
+.menu a:hover {
+background: red;
+}
+.center {
+
+display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 5px auto;
+}
+
+.center .maintxt {
+	margin: 20px;
+	border:none;
+	background:none;
+}
+.mainpng {
+	width: 100%;
+}
+p {
+	margin: 10px 0;
+	text-align: center;
+}
+.ourclass {
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 0.115em;
+	color: #6a6a6a;
+	text-align: center;
+	background: radial-gradient(circle, rgba(247,255,60,1) 12%, rgba(105,214,31,1) 98%);
+	padding: 10px 0;
+}
+
+
+
+.prinyatietxt {
+	font-size: 22px;
+	line-height: 18px;
+	letter-spacing: 0.115em;
+	color: #6a6a6a;
+	text-align:center;
+	background: radial-gradient(circle, rgba(247,255,60,1) 12%, rgba(105,214,31,1) 98%);
+	padding: 10px 0;
+}
+
+
+
+.slider {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	gap: 22px;
+
+
+}
+.sm_full {
+width:100%;
+}
+.formtxt {
+	font-size: 24px;
+	line-height: 28px;
+	text-align:center;
+	color: #6a6a6a;
+	background: radial-gradient(circle, rgba(247,255,60,1) 12%, rgba(105,214,31,1) 98%);
+	padding: 10px 0;
+}
+.footer {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+footer {
+	width: 100%;
+	background: #000000;
+}
+.uppend {
+	position: fixed;
+	right:30px;
+	bottom: 30px;
+}
+.phone {
+	font-size: 24px;
+	line-height: 28px;
+	color: #fff;
+}
+
+
+
+
+
+.email {
+	font-size: 24px;
+	line-height: 28px;
+
+	color: #fff;
+}
+
+.btn {
+	color: #000;
+	text-decoration: none;
+}
+.btn2{
+	font-size: 24px;
+	line-height: 28px;
+	color: #ff7b00;
+}
+
+.shine-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 25px;
+  margin: 10px 10px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #fe6637;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fe6637;
+  transition: .2s ease-in-out;
+}
+.shine-button:before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+.shine-button:hover {
+  background: #fe6637;
+  color: #fff;
+}
+.shine-button:hover:before {
+  left: 150px;
+  transition: .5s ease-in-out;
+}
+.uch1 {
+	text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+	border: 1px solid #000;
+	border-radius: 10px;
+	margin:5px;
+}
+.uch {
+    display: flex;
+	
+
+}
+
+.uch1:hover {
+animation: fadeIn;
+-webkit-box-shadow: 0px 0px 15px 4px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 0px 15px 4px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 0px 15px 4px rgba(34, 60, 80, 0.2);
+}
+
+.uch1 p {
+	display: inline-block;
+}
+.uch1 img{
+	border-radius: 40px;
+}
+main h2 {
+	color: #6a6a6a;
+	text-align: center;
+	background: radial-gradient(circle, rgba(247,255,60,1) 12%, rgba(105,214,31,1) 98%);
+	padding: 10px 0;
+	border-radius: 15px;
+	margin:0  0 20px 0;
+}
+iframe {
+	text-align:center;
+}

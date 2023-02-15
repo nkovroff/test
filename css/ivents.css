@@ -1,0 +1,340 @@
+body {
+	width:100%;
+	font-family: Ubuntu, sans-serif;
+	background: url(../img/main\ img/fon.png) no-repeat fixed;
+}
+.intro {
+	position: absolute;
+	width: 1189px;
+	height: 100px;
+	left: 165px;
+	top: 30px;
+}
+
+.logo {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 0px;
+	top: 0px;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 43px;
+
+	position: absolute;
+	width: 508px;
+	height: 23px;
+	left: 281px;
+	top: 39px;
+}
+
+.ivancova {
+	position: absolute;
+	width: 1189px;
+	height: 674px;
+	left: 165px;
+	top: 295px;
+}
+
+.ivancovatxt {
+	position: absolute;
+	width: 1036px;
+	height: 104px;
+	left: 133px;
+	top: 0px;
+
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 32px;
+	margin-bottom: 70px;
+}
+
+.img1 {
+	position: absolute;
+	width: 350px;
+	height: 500px;
+	left: 0px;
+	top: 174px;
+
+	border-radius: 15px;
+}
+
+.img2 {
+	position: absolute;
+	width: 350px;
+	height: 500px;
+	left: 419px;
+	top: 174px;
+
+	border-radius: 15px;
+}
+
+.img3 {
+	position: absolute;
+	width: 350px;
+	height: 500px;
+	left: 839px;
+	top: 174px;
+
+	border-radius: 15px;
+}
+
+.gimn {
+	position: absolute;
+	width: 1189px;
+	height: 686px;
+	left: 165px;
+	top: 1134px;
+}
+
+.gimntxt {
+	position: absolute;
+	width: 305px;
+	height: 33px;
+	left: 432px;
+	top: 0px;
+
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 32px;
+}
+
+.gimnp {
+	position: absolute;
+	width: 741px;
+	height: 63px;
+	left: 244px;
+	top: 83px;
+
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+
+	color: #525252;
+}
+
+.img4 {
+	position: absolute;
+	width: 350px;
+	height: 500px;
+	left: 0px;
+	top: 186px;
+
+	border-radius: 15px;
+}
+
+.img5 {
+	position: absolute;
+	width: 350px;
+	height: 500px;
+	left: 419px;
+	top: 186px;
+
+	border-radius: 15px;
+}
+
+.img6 {
+	position: absolute;
+	width: 350px;
+	height: 500px;
+	left: 839px;
+	top: 186px;
+
+	border-radius: 15px;
+}
+
+.edinstvo {
+	position: absolute;
+	width: 1189px;
+	height: 572px;
+	left: 164px;
+	top: 1985px;
+}
+
+.edinstvotxt {
+	position: absolute;
+	width: 529px;
+	height: 32px;
+	left: 331px;
+	top: 0px;
+
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 32px;
+}
+
+.img7 {
+	position: absolute;
+	width: 350px;
+	height: 500px;
+	left: 0px;
+	top: 72px;
+
+	border-radius: 15px;
+}
+
+.img8 {
+	position: absolute;
+	width: 350px;
+	height: 500px;
+	left: 419px;
+	top: 72px;
+
+	border-radius: 15px;
+}
+
+.img9 {
+	position: absolute;
+	width: 350px;
+	height: 500px;
+	left: 839px;
+	top: 72px;
+
+	border-radius: 15px;
+}
+.sm1 {
+	position: absolute;
+	width: 350px;
+	height: 500px;
+	left: 0px;
+	top: 174px;
+
+	border-radius: 15px;
+}
+.footer {
+	position: absolute;
+	width: 1519px;
+	height: 222px;
+	left: 0px;
+	top: 2809px;
+
+	background: #000000;
+}
+
+.logofooter {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 205px;
+	top: 61px;
+}
+
+.up {
+	position: absolute;
+	width: 17px;
+	height: 30px;
+	left: 761px;
+	top: 96px;
+}
+
+.phonelogo {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	left: 918px;
+	top: 62px;
+}
+
+.phone {
+	position: absolute;
+	width: 318px;
+	height: 28px;
+	left: 957px;
+	top: 37px;
+
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+
+	color: #fff;
+}
+
+.emaillogo {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 922px;
+	top: 142px;
+}
+
+.email {
+	position: absolute;
+	width: 274px;
+	height: 28px;
+	left: 957px;
+	top: 113px;
+
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+
+	color: #fff;
+}
+
+.btn {
+	color: #000;
+	text-decoration: none;
+}
+
+.maintxt {
+	font-weight: 700;
+	color: #000;
+	text-decoration: none;
+}
+
+.btn2{
+
+	position: absolute;
+	width: 274px;
+	height: 28px;
+	left: 457px;
+	top: 113px;
+
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+
+	color: #fff000;
+}
+
+.fotertext1{
+	position: absolute;
+	width: 274px;
+	height: 28px;
+	left: 15px;
+	top: -70px;
+}
+.fotertext2{
+	position: absolute;
+	width: 500px;
+	height: 700px;
+	left: 15px;
+	top: -30px;
+}
+.fotertext3{
+	position: absolute;
+	width: 274px;
+	height: 28px;
+	left: 15px;
+	top: 10px;
+	
+}

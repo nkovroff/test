@@ -1,0 +1,1067 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #777777;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: nowrap;
+  /* margin-right: -15px; */
+  margin-left: -15px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  top: 20%;
+  left: 0%;
+  opacity: 1;
+  z-index: 0;
+}
+.center{
+  background: none;
+    z-index: 10;
+    display: contents;
+}
+li {
+  margin: 10px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+a{
+  color: #f9f5f5;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size:16px;
+  display: block;
+  }
+  a span{
+      position: relative;
+      padding: 5px;
+      transition: .5s;
+  }
+  a span:nth-child(1){
+      color: #fff;
+      background:#262626;
+  }
+  a span:nth-child(2){
+      color: #fff;
+      background:#ff3636;
+  }
+  a span:nth-child(1)::before{
+      content: attr(data-attr);
+      position: absolute;
+      top: 0;
+      left: 0;
+      background:#ff3636;
+      padding: 5px;
+      transition: .5s;
+      transform-origin: top;
+      transform: rotateX(90deg) translateY(-50%);  
+  }
+  a:hover span:nth-child(1)::before{
+      transform: rotateX(0) translateY(0);
+  }
+  a span:nth-child(2)::before{
+      content: attr(data-attr);
+      position: absolute;
+      top: 0;
+      left: 0;
+      background:#262626;
+      padding: 5px;
+      transition: .5s;
+      transform-origin: bottom;
+      transform: rotateX(90deg) translateY(50%);
+  }
+  a:hover span:nth-child(2)::before{
+      transform: rotateX(0) translateY(0);
+  }
+  a span:nth-child(1)::after{
+      content: attr(data-attr);
+      position: absolute;
+      top: 0;
+      left: 0;
+      background:#262626;
+      padding: 5px;
+      transition: .5s;
+      transform-origin: bottom;
+      transform: rotateX(0deg) translateY(0%);
+  }
+  a:hover span:nth-child(1)::after{  
+      transform: rotateX(90deg) translateY(50%);
+  }
+  a span:nth-child(2)::after{
+      content: attr(data-attr);
+      position: absolute;
+      top: 0;
+      left: 0;
+      background:#ff3636;
+      padding: 5px;
+      transition: .5s;
+      transform-origin: top;
+      transform: rotateX(0deg) translateY(0%);
+  }
+  a:hover span:nth-child(2)::after{
+      transform: rotateX(90deg) translateY(-50%);
+  }
+  .submenu1, .submenu2, .submenu3,.submenu4,.submenu5 {
+    background: #b5b6b740;
+    position: absolute;
+    display:flex;
+    top: 100%;
+    z-index: 5;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+    flex-wrap: nowrap;
+    z-index: 2;
+  }
+  .submenu2 {
+    left: -400%;
+  }
+  .submenu3 {
+    right: -700%;
+  }
+  .submenu4 {
+    right: -500%;
+  }
+
+  .submenu5 {
+    right: -200%;
+  }
+ .pervii:hover .submenu1 {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .vtoroi:hover .submenu2 {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .tretii:hover .submenu3 {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .chetvertii:hover .submenu4 {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .pjatii:hover .submenu5 {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .dovoini {
+    background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+  }
+  .dovoini::after {
+    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+.iyun1941::after{
+  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.iyun1941 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.iyul1941::after{
+  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+  color: #fdfbfb;
+  font-size: 32px;
+  position: relative;
+  top: 16%;
+  line-height: 40px;
+  margin: 0 50px;
+  width: 65%;
+  text-align: center;
+  display: block;
+}
+.iyul1941{
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.august1941::after{
+  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.august1941 {
+background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.sept1941::after{
+  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.sept1941 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.oct1941::after{
+  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.oct1941 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.nov1941::after{
+  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.nov1941 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+ .dec1941::after{
+  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.dec1941 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+} 
+  .yan1942::after{
+    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .yan1942 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  }
+  .feb1942::after{
+    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .feb1942 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  }
+  .mart1942::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .mart1942 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  }
+  .apr1942::after{
+ content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .apr1942 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  }
+  .maj1942::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .maj1942 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  } 
+  .iyun1942::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .iyun1942 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  } 
+  .iyul1942::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .iyul1942 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  } 
+  .august1942::after{
+ content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .august1942 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  } 
+  .sept1942::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .sept1942 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  } 
+  .oct1942::after{
+ content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .oct1942 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  }
+  .nov1942::after{
+ content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .nov1942 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  } 
+   .dec1942::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .dec1942 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  }
+  .yan1943::after{
+ content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .yan1943 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  }
+  .feb1943::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .feb1943 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  } 
+  .mart1943::after{
+ content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .mart1943 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  }
+  .apr1943::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .apr1943 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  }
+  .maj1943::after{
+ content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .maj1943 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  } 
+  .iyun1943::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .iyun1943 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  } 
+  .iyul1943::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .iyul1943 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  }
+  .august1943::after{
+ content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .august1943 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  } 
+  .sept1943::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .sept1943 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  }
+  .oct1943::after{
+ content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .oct1943 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  }
+  .nov1943::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .nov1943 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  } 
+   .dec1943::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+  }
+  .dec1943 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  }
+.yan1944::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.yan1944 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.feb1944::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.feb1944 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.mart1944::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.mart1944 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.apr1944::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.apr1944 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.maj1944::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.maj1944 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.iyun1944::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.iyun1944 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.iyul1944::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.iyul1944 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.august1944::after{
+ content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.august1944 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.sept1944::after{
+ content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.sept1944 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.oct1944::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.oct1944 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.nov1944::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.nov1944 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+ .dec1944::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.dec1944 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.yan1945::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.yan1945 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.feb1945::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.feb1945 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.mart1945::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.mart1945 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.apr1945::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.apr1945 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.maj1945::after{
+content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+.maj1945 {
+  background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.posle::after{
+	content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim."; /* Добавляемый текст */ 
+    color: #fdfbfb;
+    font-size: 32px;
+    position: relative;
+    top: 16%;
+    line-height: 40px;
+    margin: 0 50px;
+    width: 65%;
+    text-align: center;
+    display: block;
+}
+  .posle {
+   background: url(../img/vechernii-minsk.jpg) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  }

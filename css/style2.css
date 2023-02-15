@@ -1,0 +1,2271 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  line-height: 40px;
+  text-align: center;
+  font-size: 32px;
+}
+.fon {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../img/fon23.jpg) no-repeat top left;
+  background-size: cover;
+}
+.logo {
+  width: 150px;
+  height: 150px;
+  background: url(../img/logo.png) no-repeat left 20% bottom 20%;
+  animation-iteration-count: infinite;
+  background-size: cover;
+  position: absolute;
+  left:10%;
+  bottom:15%;
+}
+body {
+  height: 100vh;
+  background: url(../img/proshchad-pobedy1.jpg) no-repeat center center;
+    width: 100%;
+    background-size: cover;
+position: relative;
+}
+.center{
+  background: none;
+    position: absolute;
+    z-index: 10;
+    display: contents;
+}
+li {
+  margin-top: 30px;
+  position: relative;
+  z-index: 2;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+a{
+	font-family: Arial;
+	font-size: 21px;
+	color: #000000;
+	background: #ffffffcc;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  }
+  a span{
+      position: relative;
+      padding: 10px;
+      transition: .5s;
+  }
+  a span:nth-child(1){
+      color: #fff;
+      background:#262626;
+  }
+  a span:nth-child(2){
+      color: #fff;
+      background:#ff3636;
+  }
+  a span:nth-child(1)::before{
+      content: attr(data-attr);
+      position: absolute;
+      top: 0;
+      left: 0;
+      background:#ff3636;
+      padding: 10px;
+      transition: .5s;
+      transform-origin: top;
+      transform: rotateX(90deg) translateY(-50%);  
+  }
+  a:hover span:nth-child(1)::before{
+      transform: rotateX(0) translateY(0);
+  }
+  a span:nth-child(2)::before{
+      content: attr(data-attr);
+      position: absolute;
+      top: 0;
+      left: 0;
+      background:#262626;
+      padding: 10px;
+      transition: .5s;
+      transform-origin: bottom;
+      transform: rotateX(90deg) translateY(50%);
+  }
+  a:hover span:nth-child(2)::before{
+      transform: rotateX(0) translateY(0);
+  }
+  a span:nth-child(1)::after{
+      content: attr(data-attr);
+      position: absolute;
+      top: 0;
+      left: 0;
+      background:#262626;
+      padding: 10px;
+      transition: .5s;
+      transform-origin: bottom;
+      transform: rotateX(0deg) translateY(0%);
+  }
+
+  a:hover span:nth-child(1)::after{  
+      transform: rotateX(90deg) translateY(50%);
+  }
+  a span:nth-child(2)::after{
+      content: attr(data-attr);
+      position: absolute;
+      top: 0;
+      left: 0;
+      background:#ff3636;
+      padding: 10px;
+      transition: .5s;
+      transform-origin: top;
+      transform: rotateX(0deg) translateY(0%);
+  }
+  a:hover span:nth-child(2)::after{
+      transform: rotateX(90deg) translateY(-50%);
+  }
+  .submenu1, .submenu2, .submenu3,.submenu4,.submenu5 {
+    position: absolute;
+    display:flex;
+    top: 100%;
+    z-index: 5;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+    flex-wrap: nowrap;
+    z-index: 2;
+  }
+  .pjat a{
+    padding:10px
+      }
+  .chet a{
+    padding:10px
+      }
+.trit a{
+padding:10px
+  }
+.vtor a{
+    padding:10px
+      }
+.pervi a{
+    padding:10px
+}
+.pjat:hover a{
+background:#ff3636
+    }
+.chet:hover a{
+  background:#ff3636
+      }
+.trit:hover a{
+  background:#ff3636
+      }
+.vtor:hover a{
+  background:#ff3636
+      }
+.pervi:hover a{
+  background:#ff3636
+      }
+  .submenu2 {
+    left: -400%;
+  }
+  .submenu3 {
+    right: -600%;
+  }
+  .submenu4 {
+    right: -400%;
+  }
+  .submenu5 {
+    right: -200%;
+  }
+  .pervi, .vtor,.trit, .chet, .pjat {
+    margin-top: 15PX;
+    margin-left:2px;  
+  }
+ .pervii:hover .submenu1 {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .vtoroi:hover .submenu2 {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .tretii:hover .submenu3 {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .chetvertii:hover .submenu4 {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .pjatii:hover .submenu5 {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  .dovoini {
+    background: url(../img/dovoini.jpg) no-repeat center center;
+    width: 60%;
+    height: 100vh;
+    background-size: cover;
+    float:right;
+  }
+  .dovoini:active::after {
+    color: red;
+  }
+  .dovoini::after {
+    content: "Жители и предположить не могли, что совсем скоро их судьбы беспощадно изменит и сломает война. Кто-то погибнет под первыми бомбами, кто-то успеет уйти из горящего города в эвакуацию, на передовую. А кто-то на 3 года окажется в оккупации. Но накануне минчане жили насущными бытовыми проблемами, трудились, ходили в кино, любили, рожали детей, а город рос и развивался.";  
+
+    color: #fff;
+    text-shadow: 
+      -0   -2px 4px #000000,
+       0   -2px 4px #000000,
+      -0    2px 4px #000000,
+       0    2px 4px #000000,
+      -2px -0   4px #000000,
+       2px -0   4px #000000,
+      -2px  0   4px #000000,
+       2px  0   4px #000000,
+      -1px -2px 4px #000000,
+       1px -2px 4px #000000,
+      -1px  2px 4px #000000,
+       1px  2px 4px #000000,
+      -2px -1px 4px #000000,
+       2px -1px 4px #000000,
+      -2px  1px 4px #000000,
+       2px  1px 4px #000000,
+      -2px -2px 4px #000000,
+       2px -2px 4px #000000,
+      -2px  2px 4px #000000,
+       2px  2px 4px #000000,
+      -2px -2px 4px #000000,
+       2px -2px 4px #000000,
+      -2px  2px 4px #000000,
+       2px  2px 4px #000000;
+       position: relative;
+       top: 16%;
+       left:-60%;
+       width: 55%;
+       display: block;
+       transform: translateY(40px);
+       transition: all 1s;
+  }
+.iyun1941::after{
+  content: "28 июня к исходу дня на улицы Минска ворвались передовые соединения немецких танков и мотопехоты. Город был полностью оккупирован. В последующие дни и недели в городе началось формирование и размещение оккупационных структур и военного гарнизона (около 5 тыс. солдат и офицеров).";  
+	color: #fff;
+	text-shadow: 
+		-0   -2px 4px #000000,
+		 0   -2px 4px #000000,
+		-0    2px 4px #000000,
+		 0    2px 4px #000000,
+		-2px -0   4px #000000,
+		 2px -0   4px #000000,
+		-2px  0   4px #000000,
+		 2px  0   4px #000000,
+		-1px -2px 4px #000000,
+		 1px -2px 4px #000000,
+		-1px  2px 4px #000000,
+		 1px  2px 4px #000000,
+		-2px -1px 4px #000000,
+		 2px -1px 4px #000000,
+		-2px  1px 4px #000000,
+		 2px  1px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000;
+     position: relative;
+     top: 16%;
+     left:-60%;
+     width: 55%;
+     display: block;
+}
+.iyun1941 {
+  background: url(../img/iyun41.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.iyul1941::after{
+  content: "5 июля на юго-западной окраине Минска на ул.Широкой, в 300 м от Московского шоссе, гитлеровцы создали концлагерь СС для временного содержания советских военнопленных и евреев-мужчин, первых вывозили в лагерь в Масюковщину, вторых- в Благовщину (Тростенецкий лагерь смерти).";  
+	color: #fff;
+	text-shadow: 
+		-0   -2px 4px #000000,
+		 0   -2px 4px #000000,
+		-0    2px 4px #000000,
+		 0    2px 4px #000000,
+		-2px -0   4px #000000,
+		 2px -0   4px #000000,
+		-2px  0   4px #000000,
+		 2px  0   4px #000000,
+		-1px -2px 4px #000000,
+		 1px -2px 4px #000000,
+		-1px  2px 4px #000000,
+		 1px  2px 4px #000000,
+		-2px -1px 4px #000000,
+		 2px -1px 4px #000000,
+		-2px  1px 4px #000000,
+		 2px  1px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000;
+     position: relative;
+     top: 16%;
+     left:-60%;
+     width: 55%;
+     display: block;
+}
+.iyul1941{
+  background: url(../img/iyul41.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.aug1941::after{
+  content: "14 августа в Минском гетто проведена первая облава (последующие проведены 26 и 31 августа). Под предлогом отправки на работу часть мужчин-узников гетто были вывезены в тюрьмы и расстреляны. ";  
+	color: #fff;
+	text-shadow: 
+		-0   -2px 4px #000000,
+		 0   -2px 4px #000000,
+		-0    2px 4px #000000,
+		 0    2px 4px #000000,
+		-2px -0   4px #000000,
+		 2px -0   4px #000000,
+		-2px  0   4px #000000,
+		 2px  0   4px #000000,
+		-1px -2px 4px #000000,
+		 1px -2px 4px #000000,
+		-1px  2px 4px #000000,
+		 1px  2px 4px #000000,
+		-2px -1px 4px #000000,
+		 2px -1px 4px #000000,
+		-2px  1px 4px #000000,
+		 2px  1px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000;
+     position: relative;
+     top: 16%;
+     left:-60%;
+     width: 55%;
+     text-align: center;
+     display: block;
+}
+.aug1941 {
+background: url(../img/aug1941.jpg) no-repeat center center;
+width: 60%;
+height: 100vh;
+background-size: cover;
+float:right;
+}
+.sep1941::after{
+  content: "1 сентября года в Минск прибыл палач белорусского народа генеральный комиссар округа «Беларусь» В. Кубе. До глубокой ночи он принимал дела у начальника тыла группы армии «Центр» генерала М. Шенкендорфа. Главным комиссаром в Минске В. Кубе назначил штандартенфюрера Паульсена, окружным – Янецке."; 
+	color: #fff;
+	text-shadow: 
+		-0   -2px 4px #000000,
+		 0   -2px 4px #000000,
+		-0    2px 4px #000000,
+		 0    2px 4px #000000,
+		-2px -0   4px #000000,
+		 2px -0   4px #000000,
+		-2px  0   4px #000000,
+		 2px  0   4px #000000,
+		-1px -2px 4px #000000,
+		 1px -2px 4px #000000,
+		-1px  2px 4px #000000,
+		 1px  2px 4px #000000,
+		-2px -1px 4px #000000,
+		 2px -1px 4px #000000,
+		-2px  1px 4px #000000,
+		 2px  1px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000;
+     position: relative;
+     top: 16%;
+     left:-60%;
+     width: 55%;
+     text-align: center;
+     display: block;
+}
+.sep1941 {
+  background: url(../img/sep1941.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.oct1941::after{
+  content: "26 октября года фашисты провели в городе устрашающую акцию – публичное повешение 12 подпольщиков, попавших в застенки СС.";  
+
+	color: #fff;
+	text-shadow: 
+		-0   -2px 4px #000000,
+		 0   -2px 4px #000000,
+		-0    2px 4px #000000,
+		 0    2px 4px #000000,
+		-2px -0   4px #000000,
+		 2px -0   4px #000000,
+		-2px  0   4px #000000,
+		 2px  0   4px #000000,
+		-1px -2px 4px #000000,
+		 1px -2px 4px #000000,
+		-1px  2px 4px #000000,
+		 1px  2px 4px #000000,
+		-2px -1px 4px #000000,
+		 2px -1px 4px #000000,
+		-2px  1px 4px #000000,
+		 2px  1px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000;
+     position: relative;
+     top: 16%;
+     left:-60%;
+     width: 55%;
+     text-align: center;
+     display: block;
+}
+.oct1941 {
+  background: url(../img/oct1941.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.nov1941::after{
+  content: "17 ноября года распоряжением В. Кубе и комиссара Кайзера еврейским детям боло запрещено посещение школ. В Минск приехал Вильгельм Янецке, назначенный городским комиссаром – главой гражданской оккупационной администрации города.";  
+	color: #fff;
+	text-shadow: 
+		-0   -2px 4px #000000,
+		 0   -2px 4px #000000,
+		-0    2px 4px #000000,
+		 0    2px 4px #000000,
+		-2px -0   4px #000000,
+		 2px -0   4px #000000,
+		-2px  0   4px #000000,
+		 2px  0   4px #000000,
+		-1px -2px 4px #000000,
+		 1px -2px 4px #000000,
+		-1px  2px 4px #000000,
+		 1px  2px 4px #000000,
+		-2px -1px 4px #000000,
+		 2px -1px 4px #000000,
+		-2px  1px 4px #000000,
+		 2px  1px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000;
+     position: relative;
+     top: 16%;
+     left:-60%;
+     width: 55%;
+     text-align: center;
+     display: block;
+}
+.nov1941 {
+  background: url(../img/nov1941.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+ .dec1941::after{
+  content: "13 декабря оккупационный отдел по учету рабочей силы зарегистрировал в Минске 13 700 мужчин, 20 700 женщин, 34 400 детей.";  
+	color: #fff;
+	text-shadow: 
+		-0   -2px 4px #000000,
+		 0   -2px 4px #000000,
+		-0    2px 4px #000000,
+		 0    2px 4px #000000,
+		-2px -0   4px #000000,
+		 2px -0   4px #000000,
+		-2px  0   4px #000000,
+		 2px  0   4px #000000,
+		-1px -2px 4px #000000,
+		 1px -2px 4px #000000,
+		-1px  2px 4px #000000,
+		 1px  2px 4px #000000,
+		-2px -1px 4px #000000,
+		 2px -1px 4px #000000,
+		-2px  1px 4px #000000,
+		 2px  1px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000;
+     position: relative;
+     top: 16%;
+     left:-60%;
+     width: 55%;
+     text-align: center;
+     display: block;
+}
+.dec1941 {
+  background: url(../img/dec1941.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+} 
+  .yan1942::after{
+    content: "4 января в 4 часа утра в городе намечалось поднять восстание советских патриотов и военнопленных. По оценке немецко-фашистских оккупантов, в восстании на начальном этапе должны были участвовать 2 500 человек, с увеличением числа восставших до 10 000 за счет военнопленных освобожденных из лагерей. Восстание не началось из-за ареста руководства по доносу агента «Абвера». ";  
+    color: #fff;
+    text-shadow: 
+      -0   -2px 4px #000000,
+       0   -2px 4px #000000,
+      -0    2px 4px #000000,
+       0    2px 4px #000000,
+      -2px -0   4px #000000,
+       2px -0   4px #000000,
+      -2px  0   4px #000000,
+       2px  0   4px #000000,
+      -1px -2px 4px #000000,
+       1px -2px 4px #000000,
+      -1px  2px 4px #000000,
+       1px  2px 4px #000000,
+      -2px -1px 4px #000000,
+       2px -1px 4px #000000,
+      -2px  1px 4px #000000,
+       2px  1px 4px #000000,
+      -2px -2px 4px #000000,
+       2px -2px 4px #000000,
+      -2px  2px 4px #000000,
+       2px  2px 4px #000000,
+      -2px -2px 4px #000000,
+       2px -2px 4px #000000,
+      -2px  2px 4px #000000,
+       2px  2px 4px #000000;
+       position: relative;
+       top: 16%;
+       left:-60%;
+       width: 55%;
+       display: block;
+  }
+  .yan1942 {
+  background: url(../img/jan1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  .feb1942::after{
+    content: "18 февраля из 70 содержащихся в детской трудовой колонии в пригородном Козыреве детей 42 подростка отправлены оккупантами в Германию для использования в качестве рабочей силы.";  
+    color: #fff;
+    text-shadow: 
+      -0   -2px 4px #000000,
+       0   -2px 4px #000000,
+      -0    2px 4px #000000,
+       0    2px 4px #000000,
+      -2px -0   4px #000000,
+       2px -0   4px #000000,
+      -2px  0   4px #000000,
+       2px  0   4px #000000,
+      -1px -2px 4px #000000,
+       1px -2px 4px #000000,
+      -1px  2px 4px #000000,
+       1px  2px 4px #000000,
+      -2px -1px 4px #000000,
+       2px -1px 4px #000000,
+      -2px  1px 4px #000000,
+       2px  1px 4px #000000,
+      -2px -2px 4px #000000,
+       2px -2px 4px #000000,
+      -2px  2px 4px #000000,
+       2px  2px 4px #000000,
+      -2px -2px 4px #000000,
+       2px -2px 4px #000000,
+      -2px  2px 4px #000000,
+       2px  2px 4px #000000;
+       position: relative;
+       top: 16%;
+       left:-60%;
+       width: 55%;
+       display: block;
+  }
+  .feb1942 {
+  background: url(../img/feb.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  .mart1942::after{
+content: "27 марта гитлеровцами схвачен и после долгих допросов и пыток повешен один из руководителей и организатора Минского подполья И. Л. Казинец, в 1965 году посмертно удостоенный звания Героя Советского Союза. ";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+  }
+  .mart1942 {
+  background: url(../img/mart1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  .apr1942::after{
+ content: "18 апреля под Минском десантирована советская разведывательная группа П. А. Барсуковского для укрепления находившейся в городе разведгруппы С. К. Вишневского. Конспиративная квартира и рация разведчиков размещались в одном из домов в Добромысленском переулке.";  
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+    position: relative;
+    top: 16%;
+    left:-60%;
+    width: 55%;
+    display: block;
+  }
+  .apr1942 {
+  background: url(../img/apr1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  .maj1942::after{
+content: "1 мая в целях устрашения населения и подавления подпольного движения гитлеровцы публично казнили 28 руководителей и активных участников подполья, в том числе членов подпольного Военного совета партизанского движения И. К.Кабушкина, Д.И.Копанцева, М.М.Никитина, А.Чижика и др., членов горкома КП(б)Б И.П.Казинца, С.И.Зайца, Г.М.Семенова. В Центральном сквере города, на месте казни подпольщиков, после войны установлен памятник.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+  }
+  .maj1942 {
+  background: url(../img/may1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  .iyun1942::after{
+content: "26 июня на вагоноремонтном заводе организована молодёжная подпольная группа Ивана Кухто, состоявшая из восьми человек.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+  }
+  .iyun1942 {
+  background: url(../img/ijul1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  .iyul1942::after{
+content: "31 июля 1942 года из Минска в Берлин от гауляйтера Кубе поступил рапорт о полном «освобождении от евреев» Минской области. В рапорте сообщалось также о том, что в городе осталось еще 2,6 тыс. западных и 6 тыс. местных евреев.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+  }
+  .iyul1942 {
+  background: url(../img/yul1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  .avg1942::after{
+ content: "5 августа из Минска в Шпитталь (Австрия) прибыл состав с остарбайтерами: по дороге 124 человекам удалось бежать. В ЦК КП(б)Б переправлен первый письменный отчет о работе Минского патриотического подполья. Вышел 2-ой номер подпольной газеты «Звязда».";  
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+    position: relative;
+    top: 16%;
+    left:-60%;
+    width: 55%;
+    display: block;
+  }
+  .avg1942 {
+  background: url(../img/avg1942.jpeg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  .sept1942::after{
+content: "26 сентября 1942 года гитлеровцы осуществили второй тяжелый удар по Минскому подполью, начав новую волну массовых арестов, в ходе которых были схвачены и брошены в застенки СС сотни подпольщиков. В большинстве случаев они погибали в «душегубке», на висельницах и в лагерях смерти.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+  }
+  .sept1942 {
+  background: url(../img/sep1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  .oct1942::after{
+ content: "2 октября схвачен один из организаторов и руководителей Минского подполья, создатель подпольных групп на плодовоовощных базах №1 и №2, секретарь Октябрьского подполья РК КП(б)Б Н.К.Корженевский. 7 октября схвачен и замучен гитлеровцами руководитель подпольной организации в Пушкинском поселке Минска Е.М.Баранов. 9 октября Арестованы и замучены в фашистских застенках М.П. и М.М.Вороновы – участники подготовки и выпуска подпольной газеты «Звязда» (на их квартире находилась подпольная типография).";  
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+    position: relative;
+    top: 16%;
+    left:-60%;
+    width: 55%;
+    display: block;
+  }
+  .oct1942 {
+  background: url(../img/oct1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  .nov1942::after{
+ content: "17 ноября из секретной карты стало известно о намерениях гитлеровцев оставить в Минске только 100 тыс. человек местного населения (на начало 1941 г. в нем было 204тыс.) и поселить в нём 50тыс. немцев.";  
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+    position: relative;
+    top: 16%;
+    left:-60%;
+    width: 55%;
+    display: block;
+  }
+  .nov1942 {
+  background: url(../img/nov1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+   .dec1942::after{
+content: "5 декабря оккупационные власти города объявили в Минске военное положение.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+  }
+  .dec1942 {
+  background: url(../img/dec1942.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  .yan1943::after{
+ content: "18 января возобновлено издание газеты «Звязда», как органа ЦК и Минского подпольного обкома КП(б)Б. Начато издание газеты «Чырвоная змена» как органа ЦК и Минского подпольного обкома ПКСМБ. Редактором обеих газет был М.П.Барашков.";  
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+    position: relative;
+    top: 16%;
+    left:-60%;
+    width: 55%;
+    display: block;
+  }
+  .yan1943 {
+  background: url(../img/jan1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  .feb1943::after{
+content: "4 февраля гитлеровцами схвачен и замучен в фашистских застенках активный участник Минского подполья (с мая 1942 являлся руководителем оперативной группы по борьбе с вражескими агентами и провокаторами) И.К.Кабушкин.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+  }
+  .feb1943 {
+  background: url(../img/feb1943.png) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  .mart1943::after{
+ content: "5 марта уничтожен один из лидеров белорусских националистов Ф. Акинчиц.";  
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+    position: relative;
+    top: 16%;
+    left:-60%;
+    width: 55%;
+    display: block;
+  }
+  .mart1943 {
+  background: url(../img/mart1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  .apr1943::after{
+content: "9 апреля по учёту биржи труда в Минске численность 56.000 трудоспособных жителей при общем количестве в 105.000 человек";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+  }
+  .apr1943 {
+  background: url(../img/apr1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  .maj1943::after{
+    content:"21 мая подпольщики группы В. Д. Шатько заминировали станции Минск вражеский эшелон с авиационными бомбами (взорвался на станции Руденск,  уничтожив одновременно стоявший рядом эшелон с топливом,  часть станционных путей и построек) и эшелон с горючим.";
+    color: #fff;
+    text-shadow: 
+      -0   -2px 4px #000000,
+       0   -2px 4px #000000,
+      -0    2px 4px #000000,
+       0    2px 4px #000000,
+      -2px -0   4px #000000,
+       2px -0   4px #000000,
+      -2px  0   4px #000000,
+       2px  0   4px #000000,
+      -1px -2px 4px #000000,
+       1px -2px 4px #000000,
+      -1px  2px 4px #000000,
+       1px  2px 4px #000000,
+      -2px -1px 4px #000000,
+       2px -1px 4px #000000,
+      -2px  1px 4px #000000,
+       2px  1px 4px #000000,
+      -2px -2px 4px #000000,
+       2px -2px 4px #000000,
+      -2px  2px 4px #000000,
+       2px  2px 4px #000000,
+      -2px -2px 4px #000000,
+       2px -2px 4px #000000,
+      -2px  2px 4px #000000,
+       2px  2px 4px #000000;
+       position: relative;
+       top: 16%;
+       left:-60%;
+       width: 55%;
+       display: block;
+  }
+  .maj1943 {
+  background: url(../img/maj1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  .iyun1943::after{
+content: "28 июня в результате двух диверсий, проведённых подпольщиками группы Д.Г. Гневко на ТЭЦ-2, город был лишён электроснабжения на 12 часов.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+  }
+  .iyun1943 {
+  background: url(../img/ijun1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  .iyul1943::after{
+content: "12 июля с участием высокопоставленных служащих рейха в Минске прошло второе крупное совещание начальников биржи труда и штабов по вопросам захвата и поставки рабочей силы в Германию.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+  }
+  .iyul1943 {
+  background: url(../img/ijul1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  .avg1943::after{
+ content: "30 августа спецгруппой в Минске подложены магнитные мины. В 21:00 на станции Уза (20 км от Гомеля) было взорвано 4 цистерны с горючим, от которых загорелось ещё 6 цистерн.";  
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+    position: relative;
+    top: 16%;
+    left:-60%;
+    width: 55%;
+    display: block;
+  }
+  .avg1943 {
+  background: url(../img/avg1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+  .sept1943::after{
+content: "22 сентября в результате диверсионной операции «Возмездие» ликвидирован руководитель оккупационной администрации Белоруссии гаулейтер Вильгельма Кубе. Операцию провели три девушки-разведчицы — Надежда Троян, Мария Осипова и Елена Мазаник.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+  }
+  .sept1943 {
+  background: url(../img/sept1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  .oct1943::after{
+ content: "21 октября, начавшийся погром в Минском гетто, практически завершил уничтожение его узников и положил конец существованию еврейского концлагеря в городе.";  
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+    position: relative;
+    top: 16%;
+    left:-60%;
+    width: 55%;
+    display: block;
+  }
+  .oct1943 {
+  background: url(../img/oct1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+  .nov1943::after{
+content: "7 ноября в бою с гитлеровцами погиб один из организаторов минского молодёжного подполья, руководитель крупной подпольной организации «Андрюша» Н.А. Кедышко ";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+  }
+  .nov1943 {
+  background: url(../img/nov1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  } 
+   .dec1943::after{
+content: "25 декабря гитлеровцы казнили группу минских подпольщиц (Н.П.Моисееву, Л.А. и М.П.Чижевских), готовивших убийство генерального комиссара Беларуси группенфюрера СС и генерал-лейтенанта полиции Курта фон Годберга.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+  }
+  .dec1943 {
+  background: url(../img/dec1943.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
+.yan1944::after{
+content: "25 января начал действовать Минский Южный подпольный горком ЛКСМБ, возглавлявший работу подпольных молодёжных организаций и групп в Ворошиловском, Сталинском и Октябрьском районах города Минска.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+}
+.yan1944 {
+  background: url(../img/jan1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.feb1944::after{
+content: "В феврале в здании на площади Свободы гитлеровцами приговорён к смертной казни немецкий антифашист Фриц Шменкель, который посмертно был удостоен звания Героя Советского Союза.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+}
+.feb1944 {
+  background: url(../img/feb1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.mart1944::after{
+content: "В марте оккупанты при участии марионеточного правительства в Минске, так называемой Белорусской центральной рады, начали создание Белорусской крайовой рады - военизированного фашистско-националистического формирования для борьбы с партизанами и войсками Красной Армии.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+}
+.mart1944 {
+  background: url(../img/mart1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.apr1944::after{
+content: "10 апреля подпольщики вагоноремонтного завода взорвали путеукладчик.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+}
+.apr1944 {
+  background: url(../img/apr1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.mai1944::after{
+content: "25 мая гитлеровцы начали одну из крупнейших карательных операций на территории Минского и целого ряда других районов,  имевшую цель уничтожение партизанских формирований и захват населения для вывоза в Германию. Они были вынуждены прекратить её в связи с наступлением Советской Армии.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+}
+.mai1944 {
+  background: url(../img/mai1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.iyun1944::after{
+content: "29 июня началась наступательная Минская операция войск 3-го (генерал армии И.Д.Чернявский), и 2-го (генерал-полковник Г.Ф.Захаров) и 1-го (маршал К.К.Рокоссовский)  Белорусских фронтов, в результате которого была освобождена столица Беларуси и завершён 1-ый этап крупнейший стратегической Белорусской операции 1944 года.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+}
+.iyun1944 {
+  background: url(../img/ijun1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.iyul1944::after{
+content: "На рассвете 3 июля советские войска нанесли решающий удар по находившимся в городе 3 пехотным и 1 танковой дивизиям,  3 полкам СС и другим спецподразделением гитлеровцев. С востока и северо-востока в город ворвался 2-й гвардейской танковый корпус, с севера - части 5-й гвардейской танковой армии и передовые подразделения 11-й гвардейской 31-ой армии 3-го Белорусского фронта, в середине дня с юго-востока – 1-й гвардейский танковый корпус и части 3-й армии 1-го Белорусского фронта.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+}
+.iyul1944 {
+  background: url(../img/ijul1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.avg1944::after{
+ content: "20 августа открыта первая после освобождения Беларуси подписка на республиканские газеты «Звязда», «Советская Белоруссия», а также «Чырвоная змена». Начал работу пивной завод.";  
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+    position: relative;
+    top: 16%;
+    left:-60%;
+    width: 55%;
+    display: block;
+}
+.avg1944 {
+  background: url(../img/avg1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.sept1944::after{
+ content: "20 сентября чрезвычайная государственная комиссия сделала сообщение о зверствах гитлеровских оккупантов в Минске.";  
+ color: #fff;
+ text-shadow: 
+   -0   -2px 4px #000000,
+    0   -2px 4px #000000,
+   -0    2px 4px #000000,
+    0    2px 4px #000000,
+   -2px -0   4px #000000,
+    2px -0   4px #000000,
+   -2px  0   4px #000000,
+    2px  0   4px #000000,
+   -1px -2px 4px #000000,
+    1px -2px 4px #000000,
+   -1px  2px 4px #000000,
+    1px  2px 4px #000000,
+   -2px -1px 4px #000000,
+    2px -1px 4px #000000,
+   -2px  1px 4px #000000,
+    2px  1px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000,
+   -2px -2px 4px #000000,
+    2px -2px 4px #000000,
+   -2px  2px 4px #000000,
+    2px  2px 4px #000000;
+    position: relative;
+    top: 16%;
+    left:-60%;
+    width: 55%;
+    display: block;
+}
+.sept1944 {
+  background: url(../img/sept1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.oct1944::after{
+content: "2 октября первым среди ВУЗов в городе возобновил работу  Минский педагогический и учительский институт. 8 октября прошёл воскресник по восстановлению разрушенного города. В нём участвовали 33 тыс.  минчан, очистивших от завалов и мусора 15,5 тыс. м. кв., собравших 1,3 млн. кирпичей и 403 м³ бутового камня, засыпавших  2,5 тыс. м³ воронок.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+}
+.oct1944 {
+  background: url(../img/oct1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.nov1944::after{
+content: "22 ноября первые 100 кг конфет выпустила восстановленная фабрика Коммунарка.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+}
+.nov1944 {
+  background: url(../img/nov1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+ .dec1944::after{
+content: "30 декабря премьерой оперы Е. Тикоцкого «Олеся» возобновил работу в освобождённом Минске, Государственный театр оперы и балета БССР.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+}
+.dec1944 {
+  background: url(../img/dec1944.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.jan1945::after{
+content: "15 января издано постановление СНК БССР, в соответствии с которым в Минске был организован приёмно-распределительный пункт для репатриированных из освобождённых государств советских граждан с пропускной способностью в 500 человек в сутки.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+}
+.jan1945 {
+  background: url(../img/jan1945.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.feb1945::after{
+content: "28 февраля закончена отливка памятника В.И.Ленину взамен разрушенного оккупантами. 1 мая он был установлен на площади у Дома правительства.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+}
+.feb1945 {
+  background: url(../img/feb1945.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.mart1945::after{
+content: "30 марта образован Минский сетевой узел, положивший начало истории Минских кабельных сетей.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+}
+.mart1945 {
+  background: url(../img/mart1945.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.apr1945::after{
+content: "14 апреля 1945 года на заводе имени С.М.Кирова проведена первая пробная отливка чугуна.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+}
+.apr1945 {
+  background: url(../img/apr1945.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.mai1945::after{
+content: "8 мая врач-патологоанатом Юрий Гулькевич в составе специальной комиссии в городе Бух, в 50 км от Берлина, осуществил основную часть работы по вскрытию трупов Геббельса и членов его семьи, Ганса Кребса, а также участвовал с будущем президентом АН БССР Николаем Гращенковым в идентификации трупов Адольфа Гитлера и Евы Браун.";  
+color: #fff;
+text-shadow: 
+  -0   -2px 4px #000000,
+   0   -2px 4px #000000,
+  -0    2px 4px #000000,
+   0    2px 4px #000000,
+  -2px -0   4px #000000,
+   2px -0   4px #000000,
+  -2px  0   4px #000000,
+   2px  0   4px #000000,
+  -1px -2px 4px #000000,
+   1px -2px 4px #000000,
+  -1px  2px 4px #000000,
+   1px  2px 4px #000000,
+  -2px -1px 4px #000000,
+   2px -1px 4px #000000,
+  -2px  1px 4px #000000,
+   2px  1px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000,
+  -2px -2px 4px #000000,
+   2px -2px 4px #000000,
+  -2px  2px 4px #000000,
+   2px  2px 4px #000000;
+   position: relative;
+   top: 16%;
+   left:-60%;
+   width: 55%;
+   display: block;
+}
+.mai1945 {
+  background: url(../img/mai1945.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+}
+.poslevoini::after{
+	content: "Масштабные разрушения поставили вопрос о целесообразности восстановительных работ. Звучали предложения о строительстве нового города в нескольких километрах от руин старого, разрушенного Минска. Все-таки победила точка зрения о возрождении столицы на ее прежнем месте. И вот уже прошло почти 80 лет, как минчане трудились над восстановлением родного города и продолжают поддерживать уют и чистоту."; 
+	color: #fff;
+	text-shadow: 
+		-0   -2px 4px #000000,
+		 0   -2px 4px #000000,
+		-0    2px 4px #000000,
+		 0    2px 4px #000000,
+		-2px -0   4px #000000,
+		 2px -0   4px #000000,
+		-2px  0   4px #000000,
+		 2px  0   4px #000000,
+		-1px -2px 4px #000000,
+		 1px -2px 4px #000000,
+		-1px  2px 4px #000000,
+		 1px  2px 4px #000000,
+		-2px -1px 4px #000000,
+		 2px -1px 4px #000000,
+		-2px  1px 4px #000000,
+		 2px  1px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000,
+		-2px -2px 4px #000000,
+		 2px -2px 4px #000000,
+		-2px  2px 4px #000000,
+		 2px  2px 4px #000000;
+     position: relative;
+     top: 16%;
+     left:-60%;
+     width: 55%;
+     display: block;
+}
+  .poslevoini {
+  background: url(../img/s1200.jpg) no-repeat center center;
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  float:right;
+  }
